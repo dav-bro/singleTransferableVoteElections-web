@@ -30,7 +30,7 @@
 	<h1>Stimmzettelmuster</h1>
 </header>
 <main>
-	<form method="post" action="/createBallotLayout" data-th-object="${ballotLayoutBuilderBean}">
+	<form method="post" data-th-action="@{/createBallotLayout}" data-th-object="${ballotLayoutBuilderBean}">
         <section data-th-each="election,electionsStatus : *{elections}">
             <h1 data-th-text="${electionsStatus.count} + '. Amt'">1. Amt</h1>
 
